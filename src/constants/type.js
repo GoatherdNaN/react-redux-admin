@@ -1,0 +1,17 @@
+/**
+ * Created by Edlan on 2017/5/11.
+ */
+
+export const LOADING = 'LOADING';
+export const LOGIN_FLOW = 'LOGIN_FLOW';
+//入库管理
+export const GET_INSTOCK_DATA = 'GET_INSTOCK_DATA';
+export const SET_INSTOCK_DATA = 'SET_INSTOCK_DATA';
+export const INSTOCK_EDIT = 'INSTOCK_EDIT';
+export const NEW_INSTOCK_LIST = 'NEW_INSTOCK_LIST';
+export const SET_INSTOCK_NEWLIST = 'SET_INSTOCK_NEWLIST';
+export const INSTOCK_DELETE = 'INSTOCK_DELETE';
+export const DELETE_INSERT = 'DELETE_INSERT';
+//统计
+export const GET_STATISTICS_DATA = 'GET_STATISTICS_DATA';
+export const SET_STATISTICS_DATA = 'SET_STATISTICS_DATA';

@@ -1,0 +1,101 @@
+{
+  "Demo": [
+    {
+      "url":"/instock/list",
+      "desc":"获取入库页面的列表",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data": {
+          "data|8":[{
+            "listNumber": "@id",
+            "username": "@cname",
+            "date":"@datetime",
+            "createTime":"@datetime",
+            "status":"@natural(1, 2)"
+          }],
+          "total":"@natural(73, 80)"
+        },
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/edit",
+      "desc":"入库页面的编辑接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/newlist",
+      "desc":"入库页面的新建入库单接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data":{
+          "listNumber": "@id"
+        },
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/delete",
+      "desc":"入库页面的删除接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/login",
+      "desc":"登陆接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/statistics/data",
+      "desc":"统计界面第一个图标的接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data":{
+            "入库量":{
+      					"1":"@natural(1000, 10000)",
+      					"2":"@natural(1000, 10000)",
+      					"3":"@natural(1000, 10000)",
+      					"4":"@natural(1000, 10000)",
+      					"5":"@natural(1000, 10000)",
+      					"6":"@natural(1000, 10000)",
+      					"7":"@natural(1000, 10000)",
+      					"8":"@natural(1000, 10000)",
+      					"9":"@natural(1000, 10000)",
+      					"10":"@natural(1000, 10000)",
+      					"11":"@natural(1000, 10000)",
+      					"12":"@natural(1000, 10000)"
+				    },
+            "出库量":{
+      					"1":"@natural(1000, 10000)",
+      					"2":"@natural(1000, 10000)",
+      					"3":"@natural(1000, 10000)",
+      					"4":"@natural(1000, 10000)",
+      					"5":"@natural(1000, 10000)",
+      					"6":"@natural(1000, 10000)",
+      					"7":"@natural(1000, 10000)",
+      					"8":"@natural(1000, 10000)",
+      					"9":"@natural(1000, 10000)",
+      					"10":"@natural(1000, 10000)",
+      					"11":"@natural(1000, 10000)",
+      					"12":"@natural(1000, 10000)"
+				    }
+        },
+        "msg": "OK"
+      }
+    }
+  ]
+}
