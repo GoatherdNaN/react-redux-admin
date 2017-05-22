@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/23 0023.
- */
 import React from 'react';
 import ReactDOM from "react-dom";
 import App from "./app";

@@ -1,6 +1,3 @@
-/**
- * Created by braveran on 3/27 0027.
- */
 import Immutable from 'immutable';
 import * as actions from "../actions/index";
 const defaultState = Immutable.Map({

@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/27 0027.
- */
 import React from "react";
 import {Provider} from 'react-redux';
 import {Route,BrowserRouter,Redirect} from 'react-router-dom';

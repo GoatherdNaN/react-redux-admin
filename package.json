@@ -1,7 +1,7 @@
 {
   "name": "admin",
   "version": "1.0.0",
-  "description": "this is a backstage template",
+  "description": "一个简单的reactCMS模板",
   "main": "index.js",
   "scripts": {
     "server": "webpack-dev-server --config config/webpack.config.dev.js",
@@ -9,10 +9,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mock": "node ./mock-server/server.js 2620",
     "start": "run-p server mock"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@git.coding.net:dnmumu/admin.git"
   },
   "keywords": [
     "admin",
@@ -70,5 +66,9 @@
     "redux-saga": "^0.14.6",
     "redux-thunk": "^2.2.0",
     "whatwg-fetch": "^2.0.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
   }
 }

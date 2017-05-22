@@ -1,7 +1,3 @@
-/**
- * Created by Edlan on 2017/5/11.
- */
-
 export const LOADING = 'LOADING';
 export const LOGIN_FLOW = 'LOGIN_FLOW';
 //入库管理

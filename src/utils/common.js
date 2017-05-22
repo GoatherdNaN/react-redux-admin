@@ -1,6 +1,3 @@
-/**
- * Created by Edlan on 2017/05/12.
- */
 import moment from 'moment';
  export const deepCopy = source => {
 	let _type = typeof source;

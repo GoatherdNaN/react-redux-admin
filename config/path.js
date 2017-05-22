@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/24 0024.
- */
 let path = require("path");
 module.exports= {
     base:path.resolve("./"),

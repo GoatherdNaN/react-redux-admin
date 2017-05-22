@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/27 0027.
- */
 import {LOCATION_CHANGE} from 'react-router-redux';
 import Immutable from 'immutable';
 import {LOADING} from '../constants/type';

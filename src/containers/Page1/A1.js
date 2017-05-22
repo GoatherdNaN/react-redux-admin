@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 2017/05/09.
- */
 import React from 'react';
 import moment from 'moment';
 import {connect} from 'react-redux';

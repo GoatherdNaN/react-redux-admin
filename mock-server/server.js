@@ -1,6 +1,3 @@
-/**
- * Created by Edlan on 2017/5/11.
- */
 var path = require('path');
 var fs = require('fs');
 var mock = require("mockjs");
