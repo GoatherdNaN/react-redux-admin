@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 2017/05/15.
- */
 import React from 'react';
 import {connect} from 'react-redux';
 import echarts from 'echarts';

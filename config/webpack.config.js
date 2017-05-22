@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/23 0023.
- */
 let webpack = require("webpack");
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let path = require("./path");

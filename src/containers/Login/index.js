@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 4/14 0014.
- */
 import React from "react";
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import classnames from 'classnames';

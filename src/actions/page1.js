@@ -1,6 +1,3 @@
-/**
- * Created by Edlan on 2017/05/09.
- */
 import {request} from '../utils/request';
 import {
   GET_INSTOCK_DATA,

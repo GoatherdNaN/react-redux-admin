@@ -1,15 +1,25 @@
-# Backstage template
-# [点击查看](http://dnmumu.coding.me/admin)
-# Start 
-    npm install
-    npm install -g webpack-dev-server
-    npm start //develop
-    npm run build //production
+## 前言
+> 本工程主要基于react + redux + ant(2.x) + less + ES6/7 + webpack + fetch + react-router实现的SPA后台管理系统模板。还用了Redux的Redux-saga中间件，来集中处理react架构中的异步处理工作。用mockjs做数据模拟。
+## 项目说明
+> 此项目是本人空余时间搭建的，比较简单，作为对之前做的一个项目的技术Demo。希望大家提供宝贵的意见和建议，谢谢。
+## 下载
 
-# technology stack
+```
+git clone
+cd react-redux-antd-admin
+npm i
+```
+## 启动
 
-1. ES6
-2. React
-3. [Antd](https://ant.design/index-cn)
-4. [React-Redux](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
-5. [Redux-Saga](http://leonshi.com/redux-saga-in-chinese/docs/api/index.html)
+```
+<!--安装前请先确保已安装node和npm-->
+npm start   启动项目并启动mock-server
+npm run server  测试环境，需手动配置好代理
+npm run build   发布生产版本，对代码进行混淆压缩，提取公共代码，分离css文件
+```
+## 目标功能
+- 登陆页面（登陆，记住密码，登出）
+- 列表界面（增删改查）
+- 图表界面（echarts,折线图和饼图）
+
+

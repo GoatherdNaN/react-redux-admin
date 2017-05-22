@@ -1,6 +1,3 @@
-/**
- * Created by edlan on 3/23 0023.
- */
 let webpack = require("webpack");
 let merge = require("webpack-merge");
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
