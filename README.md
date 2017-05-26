@@ -19,8 +19,8 @@ npm run build   发布生产版本，对代码进行混淆压缩，提取公共�
 ```
 ## 目标功能
 - 登陆页面（登陆，记住密码，登出）
+![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E7%99%BB%E9%99%86.png)
 - 列表界面（增删改查）
+![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E5%85%A5%E5%BA%93%E7%AE%A1%E7%90%86.png)
 - 图表界面（echarts,折线图和饼图）
-## 界面如图
-![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/Project%20interfaces/%E5%85%A5%E5%BA%93%E7%AE%A1%E7%90%86.png)
-![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/Project%20interfaces/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1.png)
+![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1.png)
