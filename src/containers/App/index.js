@@ -63,7 +63,7 @@ class Index extends React.Component {
         return map[key] || [];
     }
     render() {
-        let {displayStatus} = this.props;
+        let {displayStatus,username,loginOut} = this.props;
         let {current} = this.state;
         return (
             <div>
@@ -72,10 +72,12 @@ class Index extends React.Component {
                         <Col span={3}>
                             <div>ReactManager</div>
                         </Col>
-                        <Col span={2} offset={19}>
-                            <Button ghost icon="logout" onClick={() => {
-                                this.props.loginOut()
-                            }}>Logout</Button>
+                        <Col span={21} className={style.settingbox}>
+                          <span className={style.logoutbtn} onClick={() => {
+                              loginOut()
+                          }}>[退出]</span>
+                          <span className={style.myusername}>{username}</span>
+                          <i className={style.myheadpic}></i>
                         </Col>
                     </Row>
                 </header>
@@ -125,7 +127,8 @@ class Index extends React.Component {
 }
 const mapStateToProps = (state) => {
     return {
-      displayStatus:state.global.get("displayStatus")
+      displayStatus:state.global.get("displayStatus"),
+      username:state.global.get("username")
     }
 };
 const mapDispatchToProps = (dispatch) => ({

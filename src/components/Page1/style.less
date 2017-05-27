@@ -16,6 +16,32 @@ tr{
     color: #000;
   }
 }
+.descriptionbox{
+  width: 100%;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+  .itemleft{
+    height: 70px;
+		line-height: 70px;
+		margin-right: 50px;
+    img{
+				height: 100%;
+				border-radius: 100%;
+			}
+  }
+  .itemright{
+    height:60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-align:left;
+    vertical-align:middle;
+		flex-grow: 1;
+		line-height: 20px;
+  }
+}
 .operate{
   cursor: pointer;
   &:hover{

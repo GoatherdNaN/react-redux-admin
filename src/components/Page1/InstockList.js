@@ -111,7 +111,7 @@ export default class InstockList extends React.Component {
     handleSort=(a, b) => (+moment(a.date).format('X'))-(+moment(b.date).format('X'))
     handleCreateTimeSort=(a, b) => (+moment(a.createTime).format('X'))-(+moment(b.createTime).format('X'))
     render() {
-      let { visible, editData, searchText, instockList, filterDropdownVisible, paginationVisible} = this.state;
+      let {expandedRows, visible, editData, searchText, instockList, filterDropdownVisible, paginationVisible} = this.state;
       let {instockEdit, searchInstock, total, toPageOne} = this.props;
       const filterDropdown = (
         <div className="custom-filter-dropdown">
@@ -145,7 +145,21 @@ export default class InstockList extends React.Component {
                 title='编辑'
               />
             }
-            <Table dataSource={instockListForShow} pagination={false}>
+            <Table
+              dataSource={instockListForShow}
+              pagination={false}
+              expandedRowRender={
+                record =>
+                <div className={style.descriptionbox}>
+            			<div className={style.itemleft}>
+            				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495883129967&di=87d5ec6cb926634f18f293b34a88b81d&imgtype=0&src=http%3A%2F%2Fimg.bitscn.com%2Fupimg%2Fallimg%2Fc160120%2F1453262W253120-12J05.jpg"/>
+            			</div>
+            			<p className={style.itemright}>
+            				{record.description}
+            			</p>
+            		</div>
+              }
+              >
                 <Column title="入库单编号" dataIndex="listNumber" key="listNumber"/>
                 <Column
                   title="入库用户"

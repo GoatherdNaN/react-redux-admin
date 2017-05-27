@@ -12,7 +12,8 @@
             "username": "@cname",
             "date":"@datetime",
             "createTime":"@datetime",
-            "status":"@natural(1, 2)"
+            "status":"@natural(1, 2)",
+            "description":"@cparagraph(18,20)"
           }],
           "total":"@natural(73, 80)"
         },
