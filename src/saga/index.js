@@ -22,7 +22,6 @@ function* rootSagas(state) {
       let instockListRes = yield call(commonMap[state.type],state.params);
       yield put({type:"LOGIN",payLoad:state.params})
     }
-    //入库
     if(GET_INSTOCK_DATA == state.type){
       let instockListRes = yield call(actionMap[state.type],state.params);
       yield put({type:SET_INSTOCK_DATA,payLoad:instockListRes})
@@ -32,7 +31,7 @@ function* rootSagas(state) {
     }
     if(NEW_INSTOCK_LIST == state.type){
       let newInstockListRes = yield call(actionMap[state.type],state.params);
-      state.params.listNumber = newInstockListRes.listNumber;
+      state.params = Object.assign(state.params,newInstockListRes);
       yield put({type:SET_INSTOCK_NEWLIST,payLoad:state.params})
     }
     if(INSTOCK_DELETE == state.type){

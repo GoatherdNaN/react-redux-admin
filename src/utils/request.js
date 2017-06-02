@@ -1,6 +1,6 @@
 import qs from 'querystring';
 import 'whatwg-fetch';
-import store from '../store';
+import store from '../store/index';
 import {LOADING} from '../constants/type';
 const METHOD = {
     GET: 'get',

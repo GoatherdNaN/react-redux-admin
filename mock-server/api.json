@@ -13,7 +13,8 @@
             "date":"@datetime",
             "createTime":"@datetime",
             "status":"@natural(1, 2)",
-            "description":"@cparagraph(18,20)"
+            "description":"@cparagraph(18,20)",
+            "imgUrl":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495883129967&di=87d5ec6cb926634f18f293b34a88b81d&imgtype=0&src=http%3A%2F%2Fimg.bitscn.com%2Fupimg%2Fallimg%2Fc160120%2F1453262W253120-12J05.jpg"
           }],
           "total":"@natural(73, 80)"
         },
@@ -36,7 +37,8 @@
       "res":{
         "code": 200,
         "data":{
-          "listNumber": "@id"
+          "listNumber": "@id",
+          "description":"@cparagraph(18,20)"
         },
         "msg": "OK"
       }

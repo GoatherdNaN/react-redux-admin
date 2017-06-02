@@ -39,6 +39,9 @@ class Index extends React.Component{
         status
       })
     }
+    disabledDate=current=>{
+      return current && current.valueOf() > Date.now();
+    }
     changeTime=(value, dateString)=>{
       let [beginTime,endTime] = dateString;
       this.setState({
@@ -87,6 +90,7 @@ class Index extends React.Component{
                 <Row style={{backgroundColor:'#fff',height:60,paddingTop:18,marginBottom:12}}>
                   <Col span="5" offset="1">
                     <RangePicker
+                      disabledDate={this.disabledDate}
                       format='YYYY/MM/DD'
                       onChange={this.changeTime}
                     />

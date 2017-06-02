@@ -69,16 +69,16 @@ class Index extends React.Component {
             <div>
                 <header className={style.header}>
                     <Row>
-                        <Col span={3}>
-                            <div>ReactManager</div>
-                        </Col>
-                        <Col span={21} className={style.settingbox}>
-                          <span className={style.logoutbtn} onClick={() => {
-                              loginOut()
-                          }}>[退出]</span>
-                          <span className={style.myusername}>{username}</span>
-                          <i className={style.myheadpic}></i>
-                        </Col>
+                      <Col span={3}>
+                          <div>ReactManager</div>
+                      </Col>
+                      <Col span={21} className={style.settingbox}>
+                        <span className={style.logoutbtn} onClick={() => {
+                            loginOut()
+                        }}>[退出]</span>
+                        <span className={style.myusername}>{username}</span>
+                        <i className={style.myheadpic}></i>
+                      </Col>
                     </Row>
                 </header>
 

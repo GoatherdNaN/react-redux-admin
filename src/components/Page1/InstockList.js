@@ -3,7 +3,7 @@ import moment from 'moment';
 import {Table, Icon, Input, Button} from "antd";
 import MyModal from './MyModal';
 import MyPagination from '../Common/MyPagination/index';
-import {deepCopy} from '../../utils/common';
+import {deepCopy,compare} from '../../utils/common';
 import style from './style.less';
 const {Column} = Table;
 
@@ -23,7 +23,7 @@ export default class InstockList extends React.Component {
       page:1,
       pageSize:8
     }
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps=nextProps=>{
       let {instockList} = nextProps;
       if(instockList!==this.props.instockList){
         this.setState({
@@ -41,9 +41,8 @@ export default class InstockList extends React.Component {
         visible: false,
       });
     }
-    edit=(index)=>{
-      let {instockList} = this.state;
-      let editData = instockList[index];
+    edit=(record)=>{
+      let editData = record;
       this.setState({
         editData
       },()=>{
@@ -56,10 +55,10 @@ export default class InstockList extends React.Component {
         page
       })
     }
-    delete=(index)=>{
+    delete=(record)=>{
       let {deleleItems,status,beginTime,endTime} = this.props;
       let {instockList,pageSize,page} = this.state;
-      let listNumber = instockList[index].listNumber;
+      let listNumber = instockList.find((item)=>item.listNumber==record.listNumber).listNumber;
       let insetParams={
         page:page*pageSize+1,
         pageSize:1,
@@ -108,10 +107,10 @@ export default class InstockList extends React.Component {
          filterDropdownVisible
         }, () => this.searchInput.focus())
     }
-    handleSort=(a, b) => (+moment(a.date).format('X'))-(+moment(b.date).format('X'))
+    handleSort=(a,b) => (+moment(a.date).format('X'))-(+moment(b.date).format('X'))
     handleCreateTimeSort=(a, b) => (+moment(a.createTime).format('X'))-(+moment(b.createTime).format('X'))
     render() {
-      let {expandedRows, visible, editData, searchText, instockList, filterDropdownVisible, paginationVisible} = this.state;
+      let { visible, editData, searchText, instockList, filterDropdownVisible, paginationVisible} = this.state;
       let {instockEdit, searchInstock, total, toPageOne} = this.props;
       const filterDropdown = (
         <div className="custom-filter-dropdown">
@@ -152,7 +151,7 @@ export default class InstockList extends React.Component {
                 record =>
                 <div className={style.descriptionbox}>
             			<div className={style.itemleft}>
-            				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495883129967&di=87d5ec6cb926634f18f293b34a88b81d&imgtype=0&src=http%3A%2F%2Fimg.bitscn.com%2Fupimg%2Fallimg%2Fc160120%2F1453262W253120-12J05.jpg"/>
+            				<img src={record.imgUrl}/>
             			</div>
             			<p className={style.itemright}>
             				{record.description}
@@ -175,9 +174,9 @@ export default class InstockList extends React.Component {
                 <Column title="状态" dataIndex="status" key="status"/>
                 <Column title="Action" key="action" render={(text, record, index) => (
                     <span>
-                        <span className={style.operate} onClick={()=>this.edit(index)}>编辑</span>
+                        <span className={style.operate} onClick={()=>this.edit(record)}>编辑</span>
                         <span className="ant-divider"/>
-                        <span className={style.operate} onClick={()=>this.delete(index)}>删除</span>
+                        <span className={style.operate} onClick={()=>this.delete(record)}>删除</span>
                     </span>
                 )}/>
             </Table>

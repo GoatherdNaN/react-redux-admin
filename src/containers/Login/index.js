@@ -25,13 +25,24 @@ class NormalLoginForm extends React.Component {
         })
       }
     }
+    componentDidMount=()=>{
+      window.addEventListener('keyup', this.handleKeyUp);
+    }
+    componentWillUnmount=()=>{
+        window.removeEventListener('keyup', this.handleKeyUp);
+    }
+    handleKeyUp=(e)=>{
+      if(13 == e.keyCode){
+        this.handleSubmit(e);
+      }
+    }
     handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-            if (!err) {
-                this.props.login(values);
-            }
-        });
+      e.preventDefault();
+      this.props.form.validateFields((err, values) => {
+          if (!err) {
+              this.props.login(values);
+          }
+      });
     }
     render() {
         const { getFieldDecorator } = this.props.form;
