@@ -23,5 +23,9 @@ npm run build   发布生产版本，对代码进行混淆压缩，提取公共�
 ![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E7%99%BB%E9%99%86.png)
 - 列表界面（增删改查）
 ![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E5%85%A5%E5%BA%93%E7%AE%A1%E7%90%86.png)
-- 图表界面（echarts,折线图和饼图）
+- 新建
+![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E6%96%B0%E5%BB%BA.png)
+- 编辑
+![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E7%BC%96%E8%BE%91.png)
+- 数据统计
 ![image](https://github.com/GoatherdNaN/react-redux-antd-admin/blob/master/screenshots/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1.png)
