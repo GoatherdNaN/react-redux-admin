@@ -1,5 +1,5 @@
 let webpack = require("webpack");
-let HtmlWebpackPlugin = require("html-webpack-plugin")
+let HtmlWebpackPlugin = require("html-webpack-plugin");
 let path = require("./path");
 let merge = require("webpack-merge");
 let config = require("./webpack.config");

@@ -1,6 +1,5 @@
 let webpack = require("webpack");
 let merge = require("webpack-merge");
-let ExtractTextPlugin = require("extract-text-webpack-plugin");
 let cleanWebpackPlugin = require("clean-webpack-plugin");
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 let config = require("./webpack.config");

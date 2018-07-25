@@ -45,7 +45,7 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "antd": "^2.10.0",
+    "antd": "^2.13.13",
     "babel-runtime": "^6.23.0",
     "classnames": "^2.2.5",
     "echarts": "^3.5.4",

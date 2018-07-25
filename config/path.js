@@ -7,5 +7,5 @@ module.exports= {
     dist:path.resolve("./dist"),
     node_modules:path.resolve("./node_modules"),
     config:path.resolve("./config"),
-    antd:path.resolve("./node_modules/antd")
+    antd:path.resolve("./node_modules/_antd@2.13.13@antd")
 };
